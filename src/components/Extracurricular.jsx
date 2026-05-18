@@ -49,11 +49,20 @@ const ExtracurricularCard = ({ extracurricular }) => {
             className='text-white-100 text-[14px] pl-1 tracking-wider'
           >
             {point}
-            <br></br>
-            <a href={extracurricular.credential} target="_blank" className='text-blue-400'> See Credentials</a>
           </li>
         ))}
       </ul>
+
+      {extracurricular.credential && (
+        <a
+          href={extracurricular.credential}
+          target="_blank"
+          rel="noopener noreferrer"
+          className='inline-block mt-5 text-blue-400'
+        >
+          See Credential
+        </a>
+      )}
     </VerticalTimelineElement>
   );
 };
@@ -63,10 +72,10 @@ const Extracurricular = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have Achieved so far
+          Community work, courses, and team leadership
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-        Extracurricular / Achievements. 
+        Leadership & Certifications.
         </h2>
       </motion.div>
 

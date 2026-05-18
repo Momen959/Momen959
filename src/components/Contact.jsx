@@ -40,9 +40,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Mohit Singh Rajput",
+          to_name: "Momen Ayman",
           from_email: form.email,
-          to_email: "mohit.s.rajput032997@gmail.com",
+          to_email: "momen.saif959@gmail.com",
           location: form.location,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -68,11 +68,7 @@ const Contact = () => {
   };
 
   const openLinkedInProfile = () => {
-    window.open("http://linkedin.com/in/mohitsinghrajput", "_blank");
-  };
-
-  const openCustomLink = (url) => {
-    window.open(url, "_blank");
+    window.open("https://linkedin.com/in/momen-saif-909333331/", "_blank");
   };
 
   return (
@@ -91,7 +87,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Mohit Singh Rajput"
+              placeholder="Momen Ayman"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               disabled
             />
@@ -105,7 +101,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="mohit.s.rajput032997@gmail.com"
+              placeholder="momen.saif959@gmail.com"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               disabled
             />
@@ -115,11 +111,11 @@ const Contact = () => {
               <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" style={{ color: "#915EFF" }} /> Location
             </span>
             <input
-              type='email'
-              name='email'
+              type='text'
+              name='location'
               value={form.location}
               onChange={handleChange}
-              placeholder="Bhopal, Madhya Pradesh, India"
+              placeholder="15 May City, Cairo, Egypt"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               disabled
             />
@@ -127,10 +123,10 @@ const Contact = () => {
 
           <label className="flex flex-col">
             <p className="text-center" style={{ color: "#7C7E80" }}>
-              Copyright &copy; 2024 M.R. Portfolio <br />
+              Copyright &copy; 2026 Momen Ayman Portfolio <br />
               Designed and Developed by
-              <a href="http://linkedin.com/in/mohitsinghrajput" onClick={openLinkedInProfile}>
-                <strong> Mohit Singh Rajput.</strong>
+              <a href="https://linkedin.com/in/momen-saif-909333331/" onClick={openLinkedInProfile}>
+                <strong> Momen Ayman.</strong>
               </a>
             </p>
           </label>

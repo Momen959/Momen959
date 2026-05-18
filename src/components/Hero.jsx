@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState, useEffect } from "react";
+import heroBg from "../assets/herobg.png";
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
-  const typedItems = ["Developer", "Engineer", "Designer", "Learner"];
+  const typedItems = ["Backend Developer", "FastAPI Builder", "Database Engineer", "RAG Engineer"];
   const [itemIndex, setItemIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
@@ -32,9 +33,12 @@ const Hero = () => {
   }, [charIndex, itemIndex]);
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section
+      className="relative w-full h-screen mx-auto overflow-hidden bg-primary bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] z-10 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 pointer-events-none`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -43,10 +47,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Mohit Singh Rajput</span>
+            Hi, I'm <span className="text-[#915EFF]">Momen Ayman</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm{" "}
+            I'm a {" "}
             <span
               className="typed"
               style={{
@@ -64,7 +68,7 @@ const Hero = () => {
             </span>
             <span className="typed-cursor">|</span>
             <br />
-            <b>Bring on the challenges, I'm ready to soak up knowledge!</b>
+            <b>Python, FastAPI, Node.js, databases, and deployment.</b>
           </p>
         </div>
       </div>

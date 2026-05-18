@@ -55,7 +55,7 @@ const Navbar = () => {
                 fontWeight: "bold"
               }} 
             >
-              ᴘᴏʀᴛƒᴏʟɪᴏ
+              Momen Ayman
             </span>
           </p>
         </Link>

@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   web,
   fullstack,
@@ -22,7 +21,7 @@ import {
   hackerrank,
   karate,
   portfolio,
-  pglife,
+  smsm,
   sortingvisualiser,
   aws,
 } from "../assets";
@@ -34,7 +33,7 @@ export const navLinks = [
   },
   {
     id: "education",
-    title: "Qualifications",
+    title: "Education",
   },
   {
     id: "work",
@@ -42,7 +41,7 @@ export const navLinks = [
   },
   {
     id: "extracurricular",
-    title: "Extracurricular",
+    title: "Leadership",
   },
   {
     id: "skills",
@@ -60,281 +59,296 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Frontend Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Software Developer",
-    icon: fullstack,
+    title: "FastAPI & Node.js",
+    icon: web,
+  },
+  {
+    title: "Database Engineer",
+    icon: mysql,
+  },
+  {
+    title: "Deployment Engineer",
+    icon: linux,
   },
 ];
 
 const education = [
   {
-    title: "Bachelors in Information Technology",
-    company_name: "Oriental Institute Of Science And Technology, Bhopal",
+    title: "Bachelor of Technology - Computer Science Technology",
+    company_name: "El Sewedy Polytechnic University, 10th of Ramadan City",
     icon: oist,
     iconBg: "#fff",
-    date: "2019-2023",
+    date: "Oct 2024 - Now",
     points: [
-      "Courses undertaken: Data Structures and Algorithms, Operating Systems, Database Management Systems, Distributed Computing, Object Oriented Programming, Computer Architecture, Computer Network, Compiler Design, Computer Graphics & Multimedia, Soft Computing, Cloud Computing, Information Security, Blockchain Technology, Analysis and Design of Algorithm, Artificial Intelligence, Software Engineering, Machine Learning, Data Science, Internet of Things.",
-      "CGPA: 8.88/10",
+      "Major focused on computer science technology, backend systems, databases, and applied software engineering.",
+      "Building a foundation in problem solving, object oriented programming, data handling, and full-stack deployment.",
     ],
   },
   {
-    title: "Higher Secondary",
-    company_name: "Samaritan Senior Secondary School-CBSE",
+    title: "Technical Diploma",
+    company_name: "HST School For Applied Technology, Nasr City",
     icon: samaritans,
     iconBg: "#fff",
-    date: "2018-2019",
+    date: "Oct 2021 - Jun 2024",
     points: [
-      "Courses undertaken: Physics, Chemistry and Mathematics.",
-    ],
-  },
-  {
-    title: "Senior Secondary",
-    company_name: "Samaritan Senior Secondary School-CBSE",
-    icon: samaritans,
-    iconBg: "#fff",
-    date: "2016-2017",
-    points: [
-      "Courses undertaken: Science, Social Studies, Languages and Mathematics.",
-      "CGPA: 10/10",
+      "Graduated with an excellent grade of 98%.",
+      "Completed a technical path that strengthened practical software, database, and systems fundamentals.",
     ],
   },
 ];
 
 const technologies = [
   {
+    name: "Python / FastAPI",
+    icon: backend,
+  },
+  {
+    name: "Node.js",
+    icon: javascript,
+  },
+  {
     name: "Java",
     icon: java,
   },
   {
-    name: "HTML 5",
+    name: "MongoDB",
+    icon: web,
+  },
+  {
+    name: "Qdrant / Vector DB",
+    icon: fullstack,
+  },
+  {
+    name: "SQL Server / MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Docker Compose",
+    icon: aws,
+  },
+  {
+    name: "Nginx",
+    icon: linux,
+  },
+  {
+    name: "Linux VPS",
+    icon: ubuntu,
+  },
+  {
+    name: "GitHub",
+    icon: git,
+  },
+  {
+    name: "Web Scraping",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "NLP / Lemmatization",
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
+    name: "Streamlit",
     icon: reactjs,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Ubuntu",
-    icon: ubuntu,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Linux",
-    icon: linux,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
 ];
 
 const experiences = [
   {
-    title: "Programmer Analyst Trainee",
-    company_name: "Cognizant Technology Solutions",
-    icon: cognizant,
-    iconBg: "#fff",
-    date: "May 2024 - present",
-    points: [
-      "Achieved ServiceNow Certified Risk and Compliance certification.",
-      "Specialized in GRC/IRM (Governance, Risk, and Compliance/Integrated Risk Management) within ServiceNow, gaining hands-on experience in this product line."
-    ],
-  },
-  {
-    title: "Intern",
-    company_name: "Cognizant Technology Solutions",
-    icon: cognizant,
-    iconBg: "#fff",
-    date: "Dec 2023 - Apr 2024",
-    points: [
-      "Internship at Cognizant focused on ServiceNow domain.",
-      "Achieved ServiceNow Certified System Administrator and ServiceNow Certified Application Developer certifications.",
-      "Specialized in GRC/IRM (Governance, Risk, and Compliance/Integrated Risk Management) within ServiceNow, gaining hands-on experience in this product line."
-    ],
-  },
-  {
-    title: "Web Development Intern",
-    company_name: "Next Innovation Technology",
+    title: "Backend Developer Intern",
+    company_name: "ThinkStudio",
     icon: nextinnovation,
     iconBg: "#fff",
-    date: "Jun 2023 - Aug 2023",
+    date: "Jul 2025 - Aug 2025",
     points: [
-      "Developed a web application using HTML, CSS, Javascript, PHP, and Bootstrap for the client.",
-      "Designed user-friendly UI/UX with responsive designs to make it easy for users to navigate through the website. ",
-      "Designed various different websites with responsive designs and dynamic content. ",
+      "Developed a basic Retrieval-Augmented Generation system with FastAPI, Pydantic, MongoDB, and Qdrant.",
+      "Implemented file ingestion and LLM-based retrieval so users could ask questions over uploaded documents.",
+      "Integrated JWT authentication and built APIs for database and LLM interactions."
     ],
   },
   {
-    title: "Campus Ambassador Intern: WFH",
-    company_name: "Internshala",
-    icon: internshala,
-    iconBg: "#1294C8",
-    date: "Apr 2021 - Jun 2021",
+    title: "Database Engineer",
+    company_name: "ZKTeco",
+    icon: cognizant,
+    iconBg: "#fff",
+    date: "Jun 2024 - Aug 2024",
     points: [
-      "Raised awareness about Internshala across the entire campus.",
-      "Encouraged students to explore Internshala training programs and internships.",
-      "Motivated students to enhance their skills by utilizing the opportunities provided by Internshala.",
-      "I stood 279 out of 21,963 students selected from different colleges across India",
+      "Designed a relational database schema for parking slots, vehicles, users, and access logs.",
+      "Developed SQL scripts, tables, and basic stored procedures for parking status updates and user data.",
+      "Helped troubleshoot database connectivity and data integrity issues during testing."
     ],
   },
 ];
 
 const extracurricular = [
   {
-    title: "1.5K+ Connections on LinkedIn",
-    type: "Achievements",
+    title: "Research Team Leader and Team Administration",
+    type: "One Team",
     icon: linkedin,
     iconBg: "#007BB5",
-    date: "April 2023",
-    points: ["Credential ID: mohitsinghrajput"],
-    credential: "https://www.linkedin.com/in/mohitsinghrajput/",
-  },
-  {
-    title: "Java (Basic), CSS, SQL (Basic)-HackerRank",
-    type: "Certification",
-    icon: hackerrank,
-    iconBg: "#050C18",
-    date: "2022-2023",
+    date: "Feb 2025 - Now",
     points: [
-      "Credential ID: aac000e38dc9",
-      "Credential ID: a274bb1292eb",
-      "Credential ID: b024370fa737",
+      "Manage, develop, and teach a team of young researchers the basics of research.",
+      "Share research opportunities and help the team move toward stronger academic and professional outcomes."
     ],
-    credential: "https://www.hackerrank.com/certificates/aac000e38dc9",
+    credential: "https://www.linkedin.com/in/momen-saif-909333331/",
   },
   {
-    title: "Web Development-Internshala",
-    type: "Certification",
+    title: "56th Cairo International Bookfair Organizer",
+    type: "Volunteering",
     icon: internshala,
     iconBg: "#1294C8",
-    date: "Sept 2021",
-    points: ["Credential ID: 281DB109-2DA8-A160-DCBC-C6C0F552B57C"],
-    credential:
-      "https://trainings.internshala.com/verify-certificate/?certificate_number=281DB109-2DA8-A160-DCBC-C6C0F552B57C",
+    date: "Jan 2025 - Feb 2025",
+    points: [
+      "Helped manage halls and gates, reduce crowding and conflict, and guide guests to the right sections.",
+      "Monitored specific aisles and sections to keep visitor movement organized."
+    ],
   },
   {
-    title: "Combat Sport-Karate",
-    type: "Extracurricular(Hobby)/Combat Sport",
+    title: "Registration and Workshop Organizer",
+    type: "ACTS' Sustainable Summit",
+    icon: internshala,
+    iconBg: "#1294C8",
+    date: "Nov 2024",
+    points: [
+      "Supported registration and workshop operations, tracked agendas, and kept sessions on time.",
+      "Maintained room order and checked that lecture devices were functional."
+    ],
+  },
+  {
+    title: "DECI Scholarship",
+    type: "Ministry of Telecommunication / Udacity",
+    icon: hackerrank,
+    iconBg: "#050C18",
+    date: "Credential",
+    points: [
+      "Studied Python fundamentals, data analysis fundamentals, and cyber security fundamentals.",
+      "Completed a graduation project as part of the scholarship track."
+    ],
+    credential: "http://www.udacity.com/certificate/e/fa4df102-53ae-11ed-93ad-ff42a7502f00",
+  },
+  {
+    title: "Project Management Fundamentals",
+    type: "IBM SkillsBuild",
     icon: karate,
     iconBg: "#CCCFD8",
-    date: "2006-2020",
+    date: "Credential",
     points: [
-      "State level Gold medalist in Kumite.",
-      "Renshi Cup National Championship Bronze medalist in Kumite.",
+      "Learned Agile and Waterfall project management techniques.",
+      "Practiced project charters, Gantt charts, communication management, and work breakdown structures."
     ],
+    credential: "https://skills.yourlearning.ibm.com/credential/CREDLY-4196f1eb-4ce2-4032-a0cb-3f728fb9da0d",
   },
 ];
 
 const projects = [
   {
-    name: "3D Portfolio",
+    name: "SmSm Academy Registration System",
     description:
-      "Web Portfolio in React JS which uses 3D graphics and animations to bring the content to life. The website is divided into several main sections, including an about, Education, project, connect and contact section. Each section is designed to showcase 3D's unique style and creativity, with an emphasis on interactivity and user engagement.",
+      "A production registration system where I handled backend and deployment engineering. I containerized the API, client, and database layers, automated deployment with Bash scripts, and configured Nginx on a Linux VPS for secure HTTPS traffic.",
     tags: [
       {
-        name: "react",
+        name: "node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "framer-motion",
+        name: "docker",
         color: "pink-text-gradient",
       },
       {
-        name: "three.js",
+        name: "nginx",
         color: "blue-text-gradient",
+      },
+    ],
+    image: smsm,
+    source_code_link: "https://github.com/Momen959",
+    live_project_link: "https://smsmacademy.com",
+  },
+  {
+    name: "RAG Backend System",
+    description:
+      "A document retrieval backend built with FastAPI, MongoDB, and Qdrant. It stores uploaded files, retrieves relevant chunks through semantic search, and exposes JWT-protected endpoints for LLM-powered question answering.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "qdrant",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jwt",
+        color: "green-text-gradient",
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/mohitrajput2002/my-portfolio",
-    live_project_link: "https://mohit-singh-rajput.vercel.app/",
+    source_code_link: "https://github.com/Momen959",
   },
   {
-    name: "PG Life",
+    name: "Vocab Validator & Curriculum Scraper",
     description:
-      "The PG-Life Web Application is a platform designed to facilitate the management and search for Paying Guest (PG) accommodations. It allows users to explore available PG options, view details, and connect with potential landlords or tenants.",
+      "A Streamlit automation tool that validates vocabulary against CEFR levels by scraping Cambridge Dictionary data, detects duplicates in curriculum files, and exports styled tables to Word or Google Docs with formatting preserved.",
     tags: [
       {
-        name: "html",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "streamlit",
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "beautifulsoup4",
         color: "pink-text-gradient",
       },
       {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-    ],
-    image: pglife,
-    source_code_link: "https://github.com/mohitrajput2002/PG_Life",
-    live_project_link: "https://github.com/mohitrajput2002/PG_Life",
-  },
-  {
-    name: "Sorting Visualizer",
-    description:
-      "The Sorting Visualizer is a web application that provides a visual representation of various sorting algorithms. It allows users to observe and understand how different sorting algorithms work by animating the sorting process.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "bootstrap",
+        name: "google-docs-api",
         color: "blue-text-gradient",
       },
     ],
     image: sortingvisualiser,
-    source_code_link:
-      "https://github.com/mohitrajput2002/sorting-visualizer-project.github.io.git",
-    live_project_link: "https://sorting-visuallizer.netlify.app/",
+    source_code_link: "https://github.com/Momen959",
+  },
+  {
+    name: "Spam Email Classifier",
+    description:
+      "A machine learning project using tokenization, stop-word removal, TF-IDF vectorization, and model comparison between Logistic Regression and SVM to classify emails and analyze key spam indicators.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tf-idf",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "svm",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: samaritans,
+    source_code_link: "https://github.com/Momen959",
   },
 ];
 

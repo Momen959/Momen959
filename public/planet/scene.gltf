@@ -345,7 +345,7 @@
   "buffers": [
     {
       "byteLength": 1649176,
-      "uri": "scene.bin"
+      "uri": "scene.buffer"
     }
   ],
   "extensionsUsed": [

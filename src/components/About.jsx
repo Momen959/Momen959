@@ -47,17 +47,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a aspiring software developer with experience in HTML, CSS, and
-        JavaScript, and expertise in frameworks like React, and Bootstrap. I'm a
-        quick learner and to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. Let's work together to bring
-        our ideas to life!
+        I'm a quick-learning backend developer based in Cairo, focused on
+        Python, FastAPI, Node.js, database design, and full-stack deployment. I
+        build APIs, RAG workflows, scraping tools, and production deployments
+        that turn messy information into useful, secure systems.
       </motion.p>
 
       <button className="mt-10 px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-md shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50" 
-        onClick={() => window.open("https://drive.google.com/file/d/16xHITIKZF4NNFqm6DCBwFGJrQE354OzZ/view?usp=sharing", "_blank")}
+        onClick={() => window.open("https://github.com/Momen959", "_blank")}
       >
-        <span className="font-semibold">Resume</span>
+        <span className="font-semibold">GitHub Profile</span>
       </button>
 
       <div className="mt-20 flex flex-wrap gap-10">

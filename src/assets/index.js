@@ -31,7 +31,7 @@ import hackerrank from "./company/hackerrank.png";
 import karate from "./karate.jpg";
 
 import portfolio from "./3dportfolio.png";
-import pglife from "./pglife.png";
+import smsm from "./smsm.png";
 import sortingvisualiser from "./sortingvisualiser.png";
 
 export {
@@ -63,6 +63,6 @@ export {
   hackerrank,
   karate,
   portfolio,
-  pglife,
+  smsm,
   sortingvisualiser,
 };
