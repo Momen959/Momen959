@@ -16,18 +16,18 @@ const ExtracurricularCard = ({ extracurricular }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#021136",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #021136" }}
       date={extracurricular.date}
       iconStyle={{ background: extracurricular.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full overflow-hidden rounded-full'>
           <img
             src={extracurricular.icon}
             alt={extracurricular.type}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-full h-full object-cover rounded-full'
           />
         </div>
       }

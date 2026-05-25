@@ -9,7 +9,8 @@ const Earth = () => {
   const earth = useGLTF("/planet/scene.gltf?v=2");
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    /* 🛠️ FIXED: Reduced scale from 2.5 to 1.8 to prevent the atmosphere/clouds from clipping */
+    <primitive object={earth.scene} scale={1.8} position-y={0} rotation-y={0} />
   );
 };
 

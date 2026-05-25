@@ -38,8 +38,12 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  if (!icon) return null;
+
   return (
     <Canvas
+      className='w-full h-full'
+      style={{ width: '100%', height: '100%' }}
       frameloop='always'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}

@@ -1,29 +1,35 @@
 import {
-  backend,
   web,
-  fullstack,
-  javascript,
-  java,
-  html,
-  css,
-  reactjs,
-  ubuntu,
-  tailwind,
+  soup,
+  oneteam,
+  nginx,
+  fastapi,
+  node,
+  docker,
+  tensorflow,
+  scikit,
+  qdrant,
+  think,
+  langchain,
+  mongo,
   mysql,
-  linux,
   git,
-  samaritans,
-  oist,
-  nextinnovation,
-  cognizant,
-  internshala,
-  linkedin,
-  hackerrank,
-  karate,
-  portfolio,
+  classifier,
+  udacity,
+  zk,
+  cibf,
+  acts,
+  ibm,
+  sut,
+  hst,
+  rag,
   smsm,
-  sortingvisualiser,
-  aws,
+  lp,
+  langchain2,
+  pandas,
+  python,
+  soar,
+  fitness
 } from "../assets";
 
 export const navLinks = [
@@ -59,28 +65,40 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "FastAPI & Node.js",
+    title: "Backend Development",
     icon: web,
   },
   {
-    title: "Database Engineer",
-    icon: mysql,
+    title: "Machine Learning & AI Development",
+    icon: tensorflow,
   },
   {
-    title: "Deployment Engineer",
-    icon: linux,
+    title: "Rag System Development",
+    icon: langchain,
+  },
+  {
+    title: "Containerization and Orchestration",
+    icon: docker,
   },
 ];
 
 const education = [
   {
+    title: "Technical Diploma",
+    company_name: "HST School For Applied Technology, Nasr City",
+    icon: hst,
+    iconBg: "#fff",
+    date: "Oct 2021 - Jun 2024",
+    points: [
+      "Completed a technical path that strengthened practical software, database, and systems fundamentals.",
+      "Gained basic AI and data skills, and built a strong foundation in programming.",
+      "Graduated with an excellent grade of 98%.",
+    ],
+  },
+  {
     title: "Bachelor of Technology - Computer Science Technology",
     company_name: "El Sewedy Polytechnic University, 10th of Ramadan City",
-    icon: oist,
+    icon: sut,
     iconBg: "#fff",
     date: "Oct 2024 - Now",
     points: [
@@ -88,83 +106,99 @@ const education = [
       "Building a foundation in problem solving, object oriented programming, data handling, and full-stack deployment.",
     ],
   },
-  {
-    title: "Technical Diploma",
-    company_name: "HST School For Applied Technology, Nasr City",
-    icon: samaritans,
-    iconBg: "#fff",
-    date: "Oct 2021 - Jun 2024",
-    points: [
-      "Graduated with an excellent grade of 98%.",
-      "Completed a technical path that strengthened practical software, database, and systems fundamentals.",
-    ],
-  },
 ];
 
 const technologies = [
   {
-    name: "Python / FastAPI",
-    icon: backend,
+    category: "Backend & Deployment",
+    items: [
+      {
+        name: "FastAPI",
+        icon: fastapi,
+      },
+      {
+        name: "Node.js",
+        icon: node,
+      },
+      {
+        name: "Docker Compose",
+        icon: docker,
+      },
+      {
+        name: "Nginx",
+        icon: nginx,
+      },
+      {
+        name: "MongoDB",
+        icon: mongo,
+      },
+      {
+        name: "Qdrant / Vector DB",
+        icon: qdrant,
+      },
+      {
+        name: "MySQL / Postgres",
+        icon: mysql,
+      }
+    ],
   },
   {
-    name: "Node.js",
-    icon: javascript,
+    category: "AI & Data",
+    items: [
+      {
+        name: "Python",
+        icon: python,
+      },
+      {
+        name: "Pandas",
+        icon: pandas,
+      },
+      {
+        name: "Scikit-learn",
+        icon: scikit,
+      },
+      {
+        name: "TensorFlow",
+        icon: tensorflow,
+      },
+      {
+        name: "LangChain",
+        icon: langchain2,
+      }
+    ],
   },
   {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "MongoDB",
-    icon: web,
-  },
-  {
-    name: "Qdrant / Vector DB",
-    icon: fullstack,
-  },
-  {
-    name: "SQL Server / MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Docker Compose",
-    icon: aws,
-  },
-  {
-    name: "Nginx",
-    icon: linux,
-  },
-  {
-    name: "Linux VPS",
-    icon: ubuntu,
-  },
-  {
-    name: "GitHub",
-    icon: git,
-  },
-  {
-    name: "Web Scraping",
-    icon: html,
-  },
-  {
-    name: "NLP / Lemmatization",
-    icon: css,
-  },
-  {
-    name: "Streamlit",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    category: "Web & Automation",
+    items: [
+      {
+        name: "Web Scraping",
+        icon: soup,
+      },
+      {
+        name: "GitHub",
+        icon: git,
+      },
+    ],
   },
 ];
 
 const experiences = [
   {
+    title: "Database Engineer",
+    company_name: "ZKTeco",
+    icon: zk,
+    iconBg: "#fff",
+    date: "Jun 2024 - Aug 2024",
+    points: [
+      "Designed a relational database schema for parking slots, vehicles, users, and access logs.",
+      "Developed SQL scripts, tables, and basic stored procedures for parking status updates and user data.",
+      "Helped troubleshoot database connectivity and data integrity issues during testing."
+    ],
+  },
+  {
     title: "Backend Developer Intern",
     company_name: "ThinkStudio",
-    icon: nextinnovation,
+    icon: think,
     iconBg: "#fff",
     date: "Jul 2025 - Aug 2025",
     points: [
@@ -174,24 +208,47 @@ const experiences = [
     ],
   },
   {
-    title: "Database Engineer",
-    company_name: "ZKTeco",
-    icon: cognizant,
-    iconBg: "#fff",
-    date: "Jun 2024 - Aug 2024",
+    title: "Backend Developer",
+    company_name: "SmSm Academy (Freelance)",
+    icon: node,
+    iconBg: "#01091e",
+    date: "May 2026",
     points: [
-      "Designed a relational database schema for parking slots, vehicles, users, and access logs.",
-      "Developed SQL scripts, tables, and basic stored procedures for parking status updates and user data.",
-      "Helped troubleshoot database connectivity and data integrity issues during testing."
+      "Designed and developed a production-ready containerized registration system for an institutional academy client.",
+      "Engineered a high-performance backend infrastructure utilizing Node.js for stable, concurrent student onboarding workflows.",
+      "Architected isolation networks and reverse proxy layers using Docker and Nginx configurations to guarantee traffic routing stability.",
+      "Optimized production delivery pipelines ensuring zero-downtime containerized application state updates.",
     ],
   },
 ];
 
 const extracurricular = [
   {
+    title: "Registration and Workshop Organizer",
+    type: "ACTS' Sustainable Summit",
+    icon: acts,
+    iconBg: "#1294C8",
+    date: "Nov 2024",
+    points: [
+      "Supported registration and workshop operations, tracked agendas, and kept sessions on time.",
+      "Maintained room order and checked that lecture devices were functional."
+    ],
+  },
+  {
+    title: "56th Cairo International Bookfair Organizer",
+    type: "Volunteering",
+    icon: cibf,
+    iconBg: "#1294C8",
+    date: "Jan 2025 - Feb 2025",
+    points: [
+      "Helped manage halls and gates, reduce crowding and conflict, and guide guests to the right sections.",
+      "Monitored specific aisles and sections to keep visitor movement organized."
+    ],
+  },
+  {
     title: "Research Team Leader and Team Administration",
     type: "One Team",
-    icon: linkedin,
+    icon: oneteam,
     iconBg: "#007BB5",
     date: "Feb 2025 - Now",
     points: [
@@ -201,31 +258,9 @@ const extracurricular = [
     credential: "https://www.linkedin.com/in/momen-saif-909333331/",
   },
   {
-    title: "56th Cairo International Bookfair Organizer",
-    type: "Volunteering",
-    icon: internshala,
-    iconBg: "#1294C8",
-    date: "Jan 2025 - Feb 2025",
-    points: [
-      "Helped manage halls and gates, reduce crowding and conflict, and guide guests to the right sections.",
-      "Monitored specific aisles and sections to keep visitor movement organized."
-    ],
-  },
-  {
-    title: "Registration and Workshop Organizer",
-    type: "ACTS' Sustainable Summit",
-    icon: internshala,
-    iconBg: "#1294C8",
-    date: "Nov 2024",
-    points: [
-      "Supported registration and workshop operations, tracked agendas, and kept sessions on time.",
-      "Maintained room order and checked that lecture devices were functional."
-    ],
-  },
-  {
     title: "DECI Scholarship",
     type: "Ministry of Telecommunication / Udacity",
-    icon: hackerrank,
+    icon: udacity,
     iconBg: "#050C18",
     date: "Credential",
     points: [
@@ -237,7 +272,7 @@ const extracurricular = [
   {
     title: "Project Management Fundamentals",
     type: "IBM SkillsBuild",
-    icon: karate,
+    icon: ibm,
     iconBg: "#CCCFD8",
     date: "Credential",
     points: [
@@ -271,9 +306,29 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: smsm,
-    source_code_link: "https://github.com/Momen959",
+    image: smsm, // 📂 Points to your local asset import
     live_project_link: "https://smsmacademy.com",
+  },
+  {
+    name: "CyberNest SOAR",
+    description:
+      "An automated Security Orchestration, Automation, and Response (SOAR) platform designed to streamline incident responses. Built with high-performance event tracking pipelines, it orchestrates complex defensive workflows and automates threat mitigation protocols across isolated network environments.",
+    tags: [
+      {
+        name: "containerization",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "machine-learning",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: soar,
+    live_project_link: "https://github.com/Momen959",
   },
   {
     name: "RAG Backend System",
@@ -297,8 +352,33 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: portfolio,
-    source_code_link: "https://github.com/Momen959",
+    image: rag,
+    live_project_link: "https://github.com/Momen959",
+  },
+  {
+    name: "Fitness Tracker API",
+    description:
+      "A comprehensive fitness scheduling application engineered with a clean architecture pattern. It implements Constraint Satisfaction Problems (CSP) for smart scheduling under rest-day boundaries, alongside an inline Neural Network to predict user adherence thresholds.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai-csp-planning",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "neural-networks",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: fitness, // 📂 Replace with your fitness asset reference or placeholder variable
+    live_project_link: "https://github.com/Momen959",
   },
   {
     name: "Vocab Validator & Curriculum Scraper",
@@ -322,8 +402,8 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: sortingvisualiser,
-    source_code_link: "https://github.com/Momen959",
+    image: lp,
+    live_project_link: "https://github.com/Momen959",
   },
   {
     name: "Spam Email Classifier",
@@ -347,8 +427,8 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: samaritans,
-    source_code_link: "https://github.com/Momen959",
+    image: classifier,
+    live_project_link: "https://github.com/Momen959",
   },
 ];
 

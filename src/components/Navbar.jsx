@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+
+// 🛠️ Imported FontAwesome elements for the clean document icon style
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -25,41 +29,30 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleViewResume = () => {
+    window.open("https://docs.google.com/document/d/1EBfWEmok4prBi7OOnHE9VxmC32sIkS_G/edit", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed top-0 z-[9999] ${
+        scrolled ? "bg-primary backdrop-blur-lg" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
+        
+        {/* 🛠️ FIXED: Seamless inline Link-style Resume Button with a document icon */}
+        <button
+          onClick={handleViewResume}
+          className="text-secondary hover:text-white text-[18px] font-medium flex items-center gap-2 cursor-pointer bg-transparent border-none outline-none transition-colors duration-300 active:scale-95"
         >
-          <img src={logo} alt='logo' className='w-14 h-15 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            <span 
-              className='sm:block hidden' 
-              style={{
-                backgroundImage: "linear-gradient(to bottom, rgba(245, 202, 153, 0.5), rgba(245, 202, 153, 0.5))",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "100% 5px",
-                backgroundPosition: "0 100%",
-                display: "inline-block",
-                fontWeight: "bold"
-              }} 
-            >
-              Momen Ayman
-            </span>
-          </p>
-        </Link>
+          <FontAwesomeIcon icon={faFileLines} className="text-[17px]" />
+          <span>Resume</span>
+        </button>
 
+        {/* Desktop Navigation Links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
@@ -74,6 +67,7 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* Mobile Navigation Menu */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -85,7 +79,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-[9999] rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
