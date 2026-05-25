@@ -107,7 +107,7 @@ const Contact = () => {
       </motion.div>
 
       {/* Main content grid setup */}
-      <div className={`mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden`}>
+      <div className='mt-12 flex flex-col xl:flex-row gap-10 overflow-hidden'>
         {/* Form container */}
         <motion.div 
           variants={slideIn("left", "tween", 0.2, 1)} // 🛠️ Swapped "up" to "left" so it glides side-by-side cleanly with the Earth model
