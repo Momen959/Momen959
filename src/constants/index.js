@@ -403,7 +403,7 @@ const projects = [
       },
     ],
     image: lp,
-    live_project_link: "https://github.com/Momen959",
+    live_project_link: "lpverifytool.streamlit.app",
   },
   {
     name: "Spam Email Classifier",
